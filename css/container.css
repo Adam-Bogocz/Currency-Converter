@@ -1,0 +1,14 @@
+.container {
+    max-width: 420px;
+    margin: auto;
+    }
+
+.container--result {
+    line-height: 50px;
+    background-color: #f59a9acc;
+    max-width: 100%;
+    font-size: 24px;
+    padding: 10px 20px;
+    border-radius: 5px;
+
+}

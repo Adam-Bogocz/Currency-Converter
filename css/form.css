@@ -1,0 +1,25 @@
+.form__labelNumber {
+    width: 100%;
+    max-width: 130px;
+    display: inline-block;
+    margin: 5px;
+}
+
+.form__field {
+    border: 2px solid #f36464cc;
+    padding: 10px;
+    width: 20%;
+    min-width: 100px;
+    border-radius: 5px;
+}
+
+.form__field:required {
+    background-color: #f5d8d8cc;
+}
+
+.form__fieldset {
+    background-color: #f5d8d754;
+    border: 2px solid #b44646cc;
+    padding: 20px;
+    border-radius: 5px;
+}
