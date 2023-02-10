@@ -1,12 +1,12 @@
-.form__labelNumber {
+.form__labelText {
     width: 100%;
-    max-width: 130px;
+    max-width: 170px;
     display: inline-block;
     margin: 5px;
 }
 
 .form__field {
-    border: 2px solid #f36464cc;
+    border: 2px solid #64eef3cc;
     padding: 10px;
     width: 20%;
     min-width: 100px;
@@ -19,7 +19,7 @@
 
 .form__fieldset {
     background-color: #f5d8d754;
-    border: 2px solid #b44646cc;
+    border: 2px solid #46b4a2cc;
     padding: 20px;
     border-radius: 5px;
 }

@@ -1,14 +1,14 @@
 .container {
-    max-width: 420px;
+    max-width: 400px;
     margin: auto;
+    padding: 200px 12px;
     }
 
 .container--result {
+    margin:auto;
     line-height: 50px;
-    background-color: #f59a9acc;
-    max-width: 100%;
-    font-size: 24px;
-    padding: 10px 20px;
+    background: #9ae7f5cc;
+    font-size: 20px;
+    padding: 12px;
     border-radius: 5px;
-
 }
