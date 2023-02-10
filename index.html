@@ -22,14 +22,27 @@
 <body class="body">
     <div class="container">
         <p class="container--result js-result">100.00 PLN = 430.00 Euro</p>
+
         <form class="js-form">
+            <fieldset class="fieldset">
+                <p>
+                    <input class="js-currency" type="radio" name="currency" checked>EUR;
+                    <input class="" type="radio" name="currency">USD;
+                </p>
+                <P>
+                    <input class="js-direction" type="radio" name="direction" checked>PLN => currency;
+                    <input class="" type="radio" name="direction">currency => PLN;
+                </P>
+            </fieldset>
+
             <fieldset class="form__fieldset">
                 <p>
                     <label>
                         <span class="form__labelText">
                             Podaj kwotę PLN:
                         </span>
-                        <input class="form__field js-cash" type="number" value="100.00" step="0.01" required autofocus>
+                        <input class="form__field js-cash" required type="number" min="1" max="1000" value="100.00" step="0.01"
+                            autofocus>
                     </label>
                 </p>
                 <p>
