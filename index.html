@@ -21,34 +21,33 @@
 
 <body class="body">
     <div class="container">
-        <p class="container--result js-result">100.00 PLN = 430.00 Euro</p>
+        <p class="container--result js-result">100.00 PLN = 430.00 EUR</p>
 
-        <form class="js-form">
+        <form class="form__fieldset--currency js-form">
             <fieldset class="fieldset">
                 <p>
-                    <input class="js-currency" type="radio" name="currency" checked>EUR;
-                    <input class="" type="radio" name="currency">USD;
+                    <input class="label_tekst js-currencyEUR" type="radio" name="currency" checked value="EUR"><span class="form__labelText">EUR</span>
+                    <input type="radio" name="currency" value="USD"><span class="form__labelText">USD</span>
                 </p>
                 <P>
-                    <input class="js-direction" type="radio" name="direction" checked>PLN => currency;
-                    <input class="" type="radio" name="direction">currency => PLN;
-                </P>
+                    <input class="js-directionFromPLN" type="radio" name="direction" checked><span class="form__labelText js-directionFromPlnText"> PLN => EUR</span>
+                    <input class="js-directionToPLN" type="radio" name="direction"><span class="form__labelText js-directionToPlnText">EUR => PLN</span>
             </fieldset>
 
             <fieldset class="form__fieldset">
                 <p>
                     <label>
-                        <span class="form__labelText">
+                        <span class="form__labelText js-cashText">
                             Podaj kwotę PLN:
                         </span>
-                        <input class="form__field js-cash" required type="number" min="1" max="1000" value="100.00" step="0.01"
-                            autofocus>
+                        <input class="form__field js-cash" required type="number" min="1" max="1000" value="100.00"
+                        step="0.01" autofocus>
                     </label>
                 </p>
                 <p>
                     <label>
-                        <span class="form__labelText">
-                            kurs Euro:
+                        <span class="form__labelText js-exchangeRateText">
+                            kurs EUR:
                         </span>
                         <input class="form__field js-exchangeRate" type="number" value="4.30" step="0.01" required>
                     </label>
