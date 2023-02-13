@@ -1,6 +1,8 @@
-console.log("Cześć!");
-
 {
+    const welcome = () => {
+        console.log("Cześć!");
+    }
+
     const calculateResult = (cash, exchangeRate, direction) => {
         switch (direction) {
             case "fromPLN":
@@ -14,19 +16,10 @@ console.log("Cześć!");
         const resultElement = document.querySelector(".js-result");
         switch (direction) {
             case "fromPLN":
-                if (currency === "EUR") {
-                    return resultElement.innerText = `${cash} PLN = ${result.toFixed(2)} EUR`;
-                }
-                if (currency === "USD") {
-                    return resultElement.innerText = `${cash} PLN = ${result.toFixed(2)} USD`;
-                }
+                return resultElement.innerText = `${cash} PLN = ${result.toFixed(2)} ${currency}`;
+
             case "toPLN":
-                if (currency === "EUR") {
-                    return resultElement.innerText = `${cash} EUR = ${result.toFixed(2)} PLN`;
-                }
-                if (currency === "USD") {
-                    return resultElement.innerText = `${cash} USD = ${result.toFixed(2)} PLN`;
-                }
+                return resultElement.innerText = `${cash} ${currency} = ${result.toFixed(2)} PLN`;
         }
     }
 
@@ -67,7 +60,7 @@ console.log("Cześć!");
 
         const cash = cashElement.value;
         const exchangeRate = exchangeRateElement.value;
-      
+
         if (formCurrencyElement.checked === true) {
             currency = "EUR";
         } else {
@@ -89,6 +82,7 @@ console.log("Cześć!");
         const formElement = document.querySelector(".js-form");
         formElement.addEventListener("input", onFormSubmit);
     }
-   
+
+    welcome();
     init();
 }
